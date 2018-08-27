@@ -1,31 +1,55 @@
-import java.util.Random;
-public class Customer implements Persona {
-  @Override
-  private int id(){
-    return(0);
-  }
-  @Override
-  public String tipo(){
-    boolean vip=false;
-    if (nextInt(2)>0){
-      vip=true;
+
+package LabCarro;
+
+public class Customer {
+    //Esto no se aun si lo voy a usar
+    public enum Genero{
+        Masculino,Femenino,Otro
+    }    
+    
+    int id;
+    String nombre,genero,tipo;
+
+    public int getId() {
+        return id;
     }
-    if(vip){
-      return ("VIP");
+
+    public void setId(int id) {
+        this.id = id;
     }
-    return("No-VIP");
-  }
-  @Override
-  public String nombre(){
-    //code nombre
-    return("Nombre");
-  }
-  @Override
-  public String genero(){
-    int x= new Random();
-    if(x>0){
-      return ("Hombre");
+
+    public String getNombre() {
+        return nombre;
     }
-    return ("Mujer");
-  }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public String getGenero() {
+        return genero;
+    }
+
+    public void setGenero(String genero) {
+        this.genero = genero;
+    }
+
+    public String getTipo() {
+        return tipo;
+    }
+
+    public void setTipo(String tipo) {
+        this.tipo = tipo;
+    }
+
+    public Customer(int id, String nombre, String genero, String tipo) {
+        this.id = id;
+        this.nombre = nombre;
+        this.genero = genero;
+        this.tipo = tipo;
+    }
+    
+    
+    
+    
 }

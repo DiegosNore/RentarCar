@@ -1,16 +1,14 @@
-public class Color{
-  public String gcolor(){
-    String[] marcas= null;
-    marcas[0]="Negro";
-    marcas[1]="Azul";
-    marcas[2]="Rojo";
-    int numero=nextInt(3);
-    if(numero==1){
-      return marcas[1];
-    }
-    if (numero==0) {
-      return marcas[0];
-    }
-    return (marcas[2]);
-  }
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package LabCarro;
+
+/**
+ *
+ * @author user
+ */
+public interface Color {
+    abstract void obtColor();
 }

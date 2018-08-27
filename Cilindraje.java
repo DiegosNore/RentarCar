@@ -9,6 +9,6 @@ package LabCarro;
  *
  * @author user
  */
-public interface Marca {
-    abstract String obtMarca();
+public interface Cilindraje {
+    void obtCilindraje();
 }

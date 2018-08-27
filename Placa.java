@@ -5,10 +5,12 @@
  */
 package LabCarro;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author user
  */
-public interface Marca {
-    abstract String obtMarca();
+public interface Placa {
+    void obtPlaca(ArrayList l);
 }
